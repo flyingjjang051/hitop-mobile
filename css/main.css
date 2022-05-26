@@ -8,7 +8,7 @@
 
 .btns { display: flex; justify-content: center; }
 
-.btns .btn { display: flex; align-items: center; height: 60px; overflow: hidden; padding: 0 40px; border-radius: 100px; background-color: #bf0c14; text-shadow: 1px 1px 0px #8f090f,2px 2px 0px #8f090f,3px 3px 0px #8f090f,4px 4px 0px #8f090f,5px 5px 0px #8f090f,6px 6px 0px #8f090f,7px 7px 0px #8f090f,8px 8px 0px #8f090f,9px 9px 0px #8f090f,10px 10px 0px #8f090f,11px 11px 0px #8f090f,12px 12px 0px #8f090f,13px 13px 0px #8f090f,14px 14px 0px #8f090f,15px 15px 0px #8f090f,16px 16px 0px #8f090f,17px 17px 0px #8f090f,18px 18px 0px #8f090f,19px 19px 0px #8f090f,20px 20px 0px #8f090f,21px 21px 0px #8f090f,22px 22px 0px #8f090f,23px 23px 0px #8f090f,24px 24px 0px #8f090f,25px 25px 0px #8f090f,26px 26px 0px #8f090f,27px 27px 0px #8f090f,28px 28px 0px #8f090f,29px 29px 0px #8f090f,30px 30px 0px #8f090f,31px 31px 0px #8f090f,32px 32px 0px #8f090f,33px 33px 0px #8f090f,34px 34px 0px #8f090f,35px 35px 0px #8f090f,36px 36px 0px #8f090f,37px 37px 0px #8f090f,38px 38px 0px #8f090f,40px 40px 0px #8f090f; }
+.btns .btn { display: flex; align-items: center; height: 40px; overflow: hidden; padding: 0 20px; border-radius: 100px; background-color: #bf0c14; font-size: 12px; text-shadow: 1px 1px 0px #8f090f,2px 2px 0px #8f090f,3px 3px 0px #8f090f,4px 4px 0px #8f090f,5px 5px 0px #8f090f,6px 6px 0px #8f090f,7px 7px 0px #8f090f,8px 8px 0px #8f090f,9px 9px 0px #8f090f,10px 10px 0px #8f090f,11px 11px 0px #8f090f,12px 12px 0px #8f090f,13px 13px 0px #8f090f,14px 14px 0px #8f090f,15px 15px 0px #8f090f,16px 16px 0px #8f090f,17px 17px 0px #8f090f,18px 18px 0px #8f090f,19px 19px 0px #8f090f,20px 20px 0px #8f090f,21px 21px 0px #8f090f,22px 22px 0px #8f090f,23px 23px 0px #8f090f,24px 24px 0px #8f090f,25px 25px 0px #8f090f,26px 26px 0px #8f090f,27px 27px 0px #8f090f,28px 28px 0px #8f090f,29px 29px 0px #8f090f,30px 30px 0px #8f090f,31px 31px 0px #8f090f,32px 32px 0px #8f090f,33px 33px 0px #8f090f,34px 34px 0px #8f090f,35px 35px 0px #8f090f,36px 36px 0px #8f090f,37px 37px 0px #8f090f,38px 38px 0px #8f090f,40px 40px 0px #8f090f; }
 
 #mainVisual { overflow: hidden; }
 
@@ -70,23 +70,29 @@
 
 #business .list li img { transition: all 0.25s ease-in-out; width: 100%; vertical-align: top; }
 
-#news .list { display: flex; margin: 0 -10px; }
+#news { overflow: hidden; }
 
-#news .list li { width: calc(33.33% - 10px); margin: 0 10px; border: 1px solid #ccc; box-sizing: border-box; }
+#news .list { display: flex; }
 
-#news .list li img { width: 100%; height: 350px; object-fit: cover; }
+#news .list li { width: 75%; border: 1px solid #ccc; box-sizing: border-box; }
 
-#news .list li .desc { overflow: hidden; padding: 20px; }
+#news .list li img { width: 100%; height: 250px; object-fit: cover; }
 
-#news .list li .desc h3 { margin-bottom: 30px; font-size: 28px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+#news .list li .desc { overflow: hidden; padding: 10px; }
 
-#news .list li .desc .txt { margin-bottom: 30px; display: -webkit-box; height: 4.5em; overflow: hidden; line-height: 1.5; -webkit-line-clamp: 3; /* autoprefixer: off */ -webkit-box-orient: vertical; word-break: break-all; }
+#news .list li .desc h3 { margin-bottom: 10px; font-size: 18.66667px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
 
-#news .list li .desc .date { color: #999; }
+#news .list li .desc .txt { margin-bottom: 20px; font-size: 12px; display: -webkit-box; height: 3em; overflow: hidden; line-height: 1.5; -webkit-line-clamp: 2; /* autoprefixer: off */ -webkit-box-orient: vertical; word-break: break-all; }
+
+#news .list li .desc .date { font-size: 12px; color: #999; }
 
 #customer { color: #fff; background-position: 50% 50%; background-image: url("../images/main/bgCustomer.jpg"); background-size: cover; }
 
-#customer .titleBox h2:after { width: 30px; height: 2px; margin: 30px auto; background-color: #fff; display: block; position: relative; content: ""; }
+#customer .titleBox h2:after { width: 30px; height: 2px; margin: 20px auto; background-color: #fff; display: block; position: relative; content: ""; }
+
+#customer .titleBox p { line-height: 1.5; padding: 0 50px; }
+
+#customer .titleBox p br { content: ""; }
 
 @keyframes mouseAnimation { 0% { transform: translateY(0); }
   100% { transform: translateY(10px); } }
