@@ -31,5 +31,48 @@
     </div>
   </div>
 </footer>
+<script>
+  const header = $("#header");
+  const btnAll = $("#header .btnAll");
+  const depth01 = $("#gnb .depth01");
+  const lnbDepth01 = $("#lnb .menu button");
+  
+  
+  //this,closure,event loop, browser rendering,
+  
+  btnAll.on("click", function () {
+    header.toggleClass("open");
+  });
+  //a에 클릭이벤트가 걸리면 반드시 기존 a가 가지고 있는 링크기능을 무력화 시켜야 한다.
+  //form안에 있는 button에 클릭 이벤트가 걸리면 기존 button이 가지고 있는 action 링크 기능을 무력화 시켜야 한다.
+  depth01.on("click",function(e) {
+    //e.preventDefault();
+    console.log(this);
+    console.log($(this));
+    const depth02 = $(this).next(".depth02");
+    depth02.slideToggle();
+    return false;
+  });
+  
+  lnbDepth01.on("click",function(e) {
+    e.preventDefault();
+    $(this).next("ul").slideToggle();
+  })
+  
+  // function eat() {
+  //   console.log("밥을 먹다");
+  // }
+  // eat();
+  // const e = {
+  //   currentTarget:"장성호",
+  //   age:20,
+  //   weight:80,
+  //   run:function() {
+  //     console.log("달리다");
+  //   }
+  // }
+  // console.log(e.currentTarget);
+  
+</script>
 </body>
 </html>
